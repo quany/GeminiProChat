@@ -214,8 +214,8 @@ export default () => {
         when={!loading()}
         fallback={() => (
           <div class="gen-cb-wrapper">
-            <span>AI is thinking...</span>
-            <div class="gen-cb-stop" onClick={stopStreamFetch}>Stop</div>
+            <span>AI正在思考中...</span>
+            <div class="gen-cb-stop" onClick={stopStreamFetch}>停止</div>
           </div>
         )}
       >
@@ -236,7 +236,7 @@ export default () => {
           <button onClick={handleButtonClick} gen-slate-btn>
             发送
           </button>
-          <button title="Clear" onClick={clear} gen-slate-btn>
+          <button title="Clear" onClick={clear} gen-slate-btn-icon>
             <IconClear />
           </button>
         </div>
