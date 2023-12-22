@@ -1,35 +1,31 @@
 <footer>
   <p mt-8 text-xs op-30>
-    <a
+    <!-- <a
       b-slate-link
       href="https://geminiprochat.com" target="_blank"
     >
       Gemini Pro Chat
-    </a>
-    <span px-1>|</span>
-    <!-- <a
-      b-slate-link
-      href="https://github.com/quany/GeminiProChat" target="_blank"
-    >
-      源代码
     </a> -->
+    <!-- <span px-1>|</span> -->
+
+    <a b-slate-link href="http://xlmapp.oss-cn-beijing.aliyuncs.com/html/1461703226701_.pic.jpg"> 微信号:uni_app</a>
     <span px-1>|</span>
     <a
       b-slate-link
-      href="javascript:void()"
+      href="https://github.com/quany/GeminiProChat"
+      target="_blank"
     >
-      微信号:uni_app
+      源代码
     </a>
-    {import.meta.env.PARTNER_LINK && import.meta.env.PARTNER_LINK_TITLE && (
-      <>
-        <span px-1>|</span>
-        <a
-          b-slate-link
-          href={import.meta.env.PARTNER_LINK} target="_blank"
-        >
-          {import.meta.env.PARTNER_LINK_TITLE}
-        </a>
-      </>
-    )}
+    {
+      import.meta.env.PARTNER_LINK && import.meta.env.PARTNER_LINK_TITLE && (
+        <>
+          <span px-1>|</span>
+          <a b-slate-link href={import.meta.env.PARTNER_LINK} target="_blank">
+            {import.meta.env.PARTNER_LINK_TITLE}
+          </a>
+        </>
+      )
+    }
   </p>
 </footer>
